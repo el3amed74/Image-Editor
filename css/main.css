@@ -1,10 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+
 }
-.editor-section{
-    width: 300px;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    padding: 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+}
+
+.container {
+    width: 850px;
+    padding: 30px 35px 35px;
+    background: #fff;
+
+}
+
+.filter .slider input {
+    width: 93%;
+    height: 5px;
+    accent-color: #5372F0;
+}
+
+.wrapper .preview-img {
+    overflow: hidden;
+}
+
+.preview-img img {
+    max-width: 490px;
+    max-height: 335px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.container.disable .editor-section,
+.container.disable .controls .reset-filter,
+.container.disable .controls .save-img {
+    opacity: 0.5;
+    pointer-events: none;
+}
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .wrapper .editor-section {
+        width: 100%;
+    }
+
+    .wrapper .preview-img {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .controls button {
+        
+        margin-bottom: 10px;
+    }
+    .controls .reset-filter{
+        width: 100%;
+    }
+    .controls .con-img{
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }

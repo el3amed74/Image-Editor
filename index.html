@@ -13,54 +13,52 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="border  rounded ">
-            <p class="h3">image editor <span class="badge bg-secondary "> bita </span></p>
-            <div class="wrapper  row">
-                <div class="editor-section  col-5 border rounded ps-4">
-                    <div class="filter">
-                        <p class="h5 pt-2">filters</p>
-                        <div class="options row ">
-                            <button class="btn btn-outline-secondary col-5 g-2 ms-2 active">brightness</button>
-                            <button class="btn btn-outline-secondary col-5 g-2 ms-2">saturation</button>
-                            <button class="btn btn-outline-secondary col-5 g-2 ms-2">inversion</button>
-                            <button class="btn btn-outline-secondary col-5 g-2 ms-2">grayscale</button>
-                        </div>
-                        <div class="slider">
-                            <div class="info row mt-2">
-                                <p class="name h5  col-8">brightness</p>
-                                <p class="value h5 col-3  ">100%</p>
-                            </div>
-                            <input type="range" min="0" max="200" value="100">
-                        </div>
+    <div class="container shadow rounded-4 disable ">
+        <p class="h3 text-center">image editor <span class="badge bg-secondary "> bita </span></p>
+        <div class="wrapper  row ">
+            <div class="editor-section border rounded ps-4 col-lg-5 col-md-5">
+                <div class="filter">
+                    <p class="h5 pt-2">filters</p>
+                    <div class="options row">
+                        <button class="btn btn-outline-secondary  col-5 m-2 active">brightness</button>
+                        <button class="btn btn-outline-secondary  col-5 m-2">saturation</button>
+                        <button class="btn btn-outline-secondary  col-5 m-2">inversion</button>
+                        <button class="btn btn-outline-secondary  col-5 m-2">grayscale</button>
                     </div>
-                    <div class="rotate">
-                        <span class="h4">rotate & flip</span>
-                        <div class="options row mt-2">
-                            <button class="btn btn-outline-secondary col-2 m-1" id="left"><i
-                                    class="fa-solid fa-rotate-left"></i></button>
-                            <button class="btn btn-outline-secondary col-2 m-1" id="right"><i
-                                    class="fa-solid fa-rotate-right"></i></button>
-                            <button class="btn btn-outline-secondary col-2 m-1" id="horizontal"><i
-                                    class="bx bx-reflect-vertical"></i></button>
-                            <button class="btn btn-outline-secondary col-2 m-1" id="vertical"><i
-                                    class="bx bx-reflect-horizontal"></i></button>
+                    <div class="slider">
+                        <div class="info d-flex justify-content-between">
+                            <p class="name h5 ">brightness</p>
+                            <p class="value h5  me-4">100%</p>
                         </div>
+                        <input type="range" min="0" max="200" value="100">
                     </div>
                 </div>
-                <div class="preview-img col-7">
-                    <img src="image-placeholder.svg" alt="" srcset="">
+                <div class="rotate">
+                    <h4>rotate & flip</h4>
+                    <div class="options row ">
+                        <button class="btn btn-outline-secondary col-2 m-2" id="left"><i
+                                class="fa-solid fa-rotate-left"></i></button>
+                        <button class="btn btn-outline-secondary col-2 m-2" id="right"><i
+                                class="fa-solid fa-rotate-right"></i></button>
+                        <button class="btn btn-outline-secondary col-2 m-2" id="horizontal"><i
+                                class="bx bx-reflect-vertical"></i></button>
+                        <button class="btn btn-outline-secondary col-2 m-2" id="vertical"><i
+                                class="bx bx-reflect-horizontal"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="controls row mt-2 ">
-                <div class="col-7">
-                    <button class="reset-filter  btn btn-outline-secondary">Reset Filters</button>
-                </div>
-                <div class="col-5 ">
-                    <input type="file" class="file-input" accept="image/*" hidden>
-                    <button class="choose-img  btn btn-secondary active">Choose Image</button>
-                    <button class="save-img ms-3 btn btn-secondary">Save Image</button>
-                </div>
+            <div class="preview-img col-lg-7 col-md-7 ">
+                <img class="img  " src="image-placeholder.svg" alt="">
+            </div>
+        </div>
+        <div class="controls row mt-2 ">
+            <div class="col-lg-7 col-md-6 ">
+                <button class="reset-filter  btn btn-outline-secondary">Reset Filters</button>
+            </div>
+            <div class="con-img col-lg-5 col-md-6 ">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img  btn btn-secondary ">Choose Image</button>
+                <button class="save-img ms-3 btn btn-secondary">Save Image</button>
             </div>
         </div>
     </div>
